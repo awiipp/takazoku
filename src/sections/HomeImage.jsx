@@ -54,7 +54,7 @@ const HomeImage = () => {
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-offset="0"
-          className="text-gray-600 text-lg mb-6"
+          className="text-gray-600 text-lg md:text-xl mb-6"
         >
           Takazoku aktif mengadakan berbagai pembelajaran budaya dan bahasa
           Jepang. Penasaran apa aja kegiatan kami? Yuk, klik tombol di bawah!
