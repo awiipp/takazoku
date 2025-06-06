@@ -6,8 +6,7 @@ export default function LandingPage() {
   const navigate = useNavigate();
 
   return (
-    <section className="min-h-screen pt-20 flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-16 bg-gradient-to-br from-amber-400 via-white to-white">
-      {/* Kiri - Teks */}
+    <section className="min-h-screen md:pt-20 pt-28 flex flex-col md:flex-row items-center md:justify-between px-6 md:px-20 py-16 bg-gradient-to-br from-amber-400 via-white to-white">
       <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
         <span className="hidden md:inline-block bg-amber-200 text-amber-800 text-sm font-semibold px-4 py-1 rounded-full">
           Japanese Club
@@ -29,7 +28,6 @@ export default function LandingPage() {
         </div>
       </div>
 
-      {/* Kanan - Gambar */}
       <div className="w-full md:w-1/2 mt-10 md:mt-0">
         <div className="rounded-3xl overflow-hidden shadow-xl w-[90%] md:mx-0 mx-auto">
           <img

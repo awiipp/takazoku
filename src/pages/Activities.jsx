@@ -14,10 +14,7 @@ const Activities = () => {
 
       {/* Card besar - hanya tampil di md ke atas */}
       <div className="hidden md:block mb-12">
-        <Link
-          to={`/activity/${featured.slug}`}
-          className="flex bg-neutral-200 rounded-xl overflow-hidden hover:bg-neutral-300 transition"
-        >
+        <div className="flex bg-neutral-200 rounded-xl overflow-hidden hover:bg-neutral-300 transition">
           <img
             src={featured.image}
             alt={featured.title}
@@ -42,15 +39,14 @@ const Activities = () => {
               <p className="text-gray-700 font-medium">{featured.date}</p>
             </div>
           </div>
-        </Link>
+        </div>
       </div>
 
       {/* Semua card termasuk featured - di mobile */}
-      <div className="block md:hidden">
+      <div className="block md:hidden px-5">
         {ActivitiesData.map((activity) => (
-          <Link
+          <div
             key={activity.id}
-            to={`/activity/${activity.slug}`}
             className="block bg-gradient-to-br from-amber-200 via-white to-amber-200 w-full px-4 py-4 rounded-lg mb-6 transition"
           >
             <div className="flex justify-between items-center mb-2">
@@ -67,16 +63,15 @@ const Activities = () => {
               {activity.title}
             </p>
             <p className="font-medium text-gray-700">{activity.date}</p>
-          </Link>
+          </div>
         ))}
       </div>
 
       {/* Card biasa - 3 kolom di desktop */}
       <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
         {others.map((activity) => (
-          <Link
+          <div
             key={activity.id}
-            to={`/activity/${activity.slug}`}
             className="bg-gradient-to-br from-amber-200 via-white to-amber-200  w-full max-w-md px-4 py-4 rounded-lg hover:transform transition"
           >
             <div className="flex mb-2 justify-between items-center">
@@ -95,7 +90,7 @@ const Activities = () => {
               {activity.title}
             </p>
             <p className="font-medium text-gray-700">{activity.date}</p>
-          </Link>
+          </div>
         ))}
       </div>
     </main>

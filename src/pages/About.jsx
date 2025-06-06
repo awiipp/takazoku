@@ -3,26 +3,23 @@ import Cover from '../assets/images/about/cover.jpg';
 import AboutPhoto from '../assets/images/about/about.jpg';
 import Takazoku from '../assets/images/assets/takazoku.png';
 import Literasi from '../assets/images/assets/literasi.png';
-import FotoPerpisahan from '../assets/images/activities/perpisahan.jpg';
 
 const About = () => {
   return (
     <main className="font-sans">
       {/* Hero Section */}
       <section
-        className="relative bg-cover bg-center text-white py-20 md:py-44 text-center"
+        className="relative bg-cover bg-center text-white py-28 md:py-44 text-center"
         style={{ backgroundImage: `url(${Cover})` }}
       >
         {/* Gradasi dari putih ke transparan */}
         <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>
-
-        {/* Konten di atas gradasi */}
       </section>
 
       <section>
         <div className="h-20"></div>
-        <div className="flex flex-col justify-center items-center md:border-x-[200px] border-x-[50px] border-amber-400">
-          <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
+        <div className="flex flex-col justify-center items-center md:border-x-[200px] border-x-[30px] border-amber-400">
+          <h1 className="text-4xl md:text-5xl font-bold text-black mb-4 text-center">
             Tentang Takazoku
           </h1>
           <p className="text-lg text-center md:text-xl italic text-gray-700 px-5">
@@ -33,7 +30,7 @@ const About = () => {
       </section>
 
       {/* Sejarah Singkat */}
-      <section className="flex flex-col md:flex-row items-center justify-center px-6 md:px-20 md:pb-32 pt-16 pb-16 gap-10">
+      <section className="flex flex-col md:flex-row items-center justify-center px-6 md:px-20 md:pb-32 md:pt-10 pb-14 gap-10">
         <div className="w-full md:w-1/2">
           <img
             src={AboutPhoto}
@@ -45,7 +42,7 @@ const About = () => {
             Sejarah Singkat
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed text-left">
-            Takazoku dibentuk pada bulan ***** 2024. Fokus Ekstrakurikuler Nihon
+            Takazoku dibentuk pada bulan Juli 2024. Fokus Ekstrakurikuler Nihon
             Club Takazoku adalah memperkenalkan dan menumbuhkan minat siswa
             terhadap bahasa serta budaya Jepang melalui kegiatan yang
             menyenangkan dan edukatif.
@@ -54,7 +51,7 @@ const About = () => {
       </section>
 
       {/* Makna Nama */}
-      <section className="bg-amber-400 py-20 px-6 md:px-20 text-center">
+      <section className="bg-amber-400 py-16 px-7 md:px-20 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
           Makna Nama "Takazoku"
         </h2>
@@ -69,7 +66,7 @@ const About = () => {
       </section>
 
       {/* Hubungan dengan Ekskul Literasi */}
-      <section className="pt-20 pb-12 md:pb-20 px-6 md:px-10 text-center flex flex-col md:flex-row items-center justify-center">
+      <section className="pt-16 md:pt-20 pb-12 md:pb-20 px-6 md:px-10 text-center flex flex-col md:flex-row items-center justify-center">
         <div className="hidden md:block">
           <img src={Literasi} alt="" className="w-[180px]" />
         </div>
@@ -105,7 +102,7 @@ const About = () => {
       </section>
 
       {/* Visi dan Misi */}
-      <section className="pb-28 pt-16 px-6 md:px-20 bg-gray-50">
+      <section className="pb-28 pt-12 px-6 md:px-20 bg-gray-100">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">
           Visi & Misi Takazoku
         </h2>
