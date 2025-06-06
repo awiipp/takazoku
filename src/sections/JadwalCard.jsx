@@ -34,8 +34,8 @@ export default function JadwalCard() {
             17:00 WIB
           </p>
           <p>
-            <span className="font-semibold text-red-800">Tempat:</span> Ruang
-            Literasi, SMKN 46 Jakarta
+            <span className="font-semibold text-red-800">Tempat:</span> SMKN 46
+            Jakarta
           </p>
         </div>
       </div>
