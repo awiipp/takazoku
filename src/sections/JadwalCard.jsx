@@ -9,7 +9,11 @@ export default function JadwalCard() {
         Jadwal Ekskul Takazoku
       </h2>
 
-      <div className="hidden md:flex rounded-xl overflow-hidden shadow-lg max-h-[280px] max-w-full mx-auto">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        className="hidden md:flex rounded-xl overflow-hidden shadow-lg max-h-[280px] max-w-full mx-auto"
+      >
         {/* Foto */}
         <div className="w-1/2 border-8 bg-amber-300 border-amber-300">
           <img
@@ -37,7 +41,11 @@ export default function JadwalCard() {
       </div>
 
       {/* Versi mobile */}
-      <div className="md:hidden rounded-xl overflow-hidden shadow-lg md:max-w-full max-w-[90%] mx-auto">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        className="md:hidden rounded-xl overflow-hidden shadow-lg md:max-w-full max-w-[90%] mx-auto"
+      >
         <div className="w-full border-8 bg-amber-300 border-amber-300">
           <img
             src={Jadwal}

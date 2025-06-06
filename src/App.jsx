@@ -8,8 +8,15 @@ import Activity from './pages/Activity';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Activities from './pages/Activities';
 import ScrollToTop from './functions/ScrollToTop';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 300, once: false, delay: 200 });
+  }, []);
+
   return (
     <BrowserRouter>
       <ScrollToTop />

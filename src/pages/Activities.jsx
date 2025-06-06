@@ -14,7 +14,10 @@ const Activities = () => {
 
       {/* Card besar - hanya tampil di md ke atas */}
       <div className="hidden md:block mb-12">
-        <div className="flex bg-neutral-200 rounded-xl overflow-hidden hover:bg-neutral-300 transition">
+        <div
+          className="flex bg-neutral-200 rounded-xl overflow-hidden hover:bg-neutral-300 transition"
+          data-aos="fade-in"
+        >
           <img
             src={featured.image}
             alt={featured.title}
@@ -46,6 +49,7 @@ const Activities = () => {
       <div className="block md:hidden px-5">
         {ActivitiesData.map((activity) => (
           <div
+            data-aos="fade-up"
             key={activity.id}
             className="block bg-gradient-to-br from-amber-200 via-white to-amber-200 w-full px-4 py-4 rounded-lg mb-6 transition"
           >
@@ -72,6 +76,7 @@ const Activities = () => {
         {others.map((activity) => (
           <div
             key={activity.id}
+            data-aos="fade-up"
             className="bg-gradient-to-br from-amber-200 via-white to-amber-200  w-full max-w-md px-4 py-4 rounded-lg hover:transform transition"
           >
             <div className="flex mb-2 justify-between items-center">

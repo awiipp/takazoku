@@ -6,7 +6,13 @@ export default function LandingPage() {
   const navigate = useNavigate();
 
   return (
-    <section className="min-h-screen md:pt-20 pt-28 flex flex-col md:flex-row items-center md:justify-between px-6 md:px-20 py-16 bg-gradient-to-br from-amber-400 via-white to-white">
+    <section
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="400"
+      data-aos-offset="0"
+      className="min-h-screen md:pt-20 pt-28 flex flex-col md:flex-row items-center md:justify-between px-6 md:px-20 py-16 bg-gradient-to-br from-amber-400 via-white to-white"
+    >
       <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
         <span className="hidden md:inline-block bg-amber-200 text-amber-800 text-sm font-semibold px-4 py-1 rounded-full">
           Japanese Club

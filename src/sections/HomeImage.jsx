@@ -10,7 +10,12 @@ const HomeImage = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 text-center inline md:hidden">
           Kegiatan Kami
         </h2>
-        <div className="h-52 md:h-64 rounded-t-xl overflow-hidden shadow-md hover:p-1 duration-300">
+        <div
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-offset="0"
+          className="h-52 md:h-64 rounded-t-xl overflow-hidden shadow-md"
+        >
           <img
             src={TopPhoto}
             alt="Kegiatan Takazoku"
@@ -18,7 +23,12 @@ const HomeImage = () => {
           />
         </div>
 
-        <div className="flex gap-4">
+        <div
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-offset="0"
+          className="flex gap-4"
+        >
           <div className="w-1/2 h-32 md:h-48 rounded-bl-xl overflow-hidden shadow-md hover:p-1 duration-300">
             <img
               src={LeftPhoto}
@@ -40,13 +50,21 @@ const HomeImage = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 hidden md:inlne">
           Kegiatan Kami
         </h2>
-        <p className="text-gray-600 text-lg mb-6">
+        <p
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-offset="0"
+          className="text-gray-600 text-lg mb-6"
+        >
           Takazoku aktif mengadakan berbagai pembelajaran budaya dan bahasa
           Jepang. Penasaran apa aja kegiatan kami? Yuk, klik tombol di bawah!
         </p>
 
         <a
           href="/activities"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-offset="0"
           className="px-6 py-3 bg-amber-400 hover:bg-amber-600 text-white font-semibold rounded-xl transition duration-300"
         >
           Aktivitas
