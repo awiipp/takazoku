@@ -12,7 +12,6 @@ const About = () => {
         className="relative bg-cover bg-center text-white py-28 md:py-44 text-center"
         style={{ backgroundImage: `url(${Cover})` }}
       >
-        {/* Gradasi dari putih ke transparan */}
         <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
@@ -83,7 +82,12 @@ const About = () => {
       {/* Hubungan dengan Ekskul Literasi */}
       <section className="pt-16 md:pt-20 pb-12 md:pb-20 px-6 md:px-10 text-center flex flex-col md:flex-row items-center justify-center overflow-hidden">
         <div className="hidden md:block">
-          <img src={Literasi} alt="" className="w-[180px]" />
+          <img
+            src={Literasi}
+            alt=""
+            className="w-[180px]"
+            data-aos="fade-right"
+          />
         </div>
         <div className="px-5">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
@@ -117,7 +121,12 @@ const About = () => {
           </p>
         </div>
         <div className="hidden md:block">
-          <img src={Takazoku} alt="" className="w-[200px]" />
+          <img
+            src={Takazoku}
+            alt=""
+            className="w-[200px]"
+            data-aos="fade-left"
+          />
         </div>
       </section>
 
@@ -128,7 +137,6 @@ const About = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Visi */}
           <div
             className="bg-white p-6 md:p-8 rounded-2xl shadow-md border-l-4 border-amber-400"
             data-aos="fade-in"
@@ -142,7 +150,6 @@ const About = () => {
             </p>
           </div>
 
-          {/* Misi */}
           <div
             className="bg-white p-6 md:p-8 rounded-2xl shadow-md border-l-4 border-amber-400"
             data-aos="fade-in"

@@ -9,6 +9,7 @@ import Dango from '../assets/images/activities/dango.jpg';
 import Shodou from '../assets/images/activities/shodou.jpg';
 import Yukata from '../assets/images/activities/yukata.jpg';
 import Suuji from '../assets/images/activities/suuji.jpg';
+import Bulbas from '../assets/images/activities/bulbas.jpg';
 
 export const ActivitiesData = [
   {
@@ -121,7 +122,7 @@ export const ActivitiesData = [
     title: 'Penampilan Bulan Bahasa 2024',
     category: 'Event',
     date: '28 Oktober 2024',
-    image: FotoPerpisahan,
+    image: Bulbas,
     slug: 'bulan-bahasa',
     excerpt:
       'Bulbas. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem nisi in laborum officiis deserunt, fuga nostrum corporis veritatis ullam tempora!',

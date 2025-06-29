@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { ActivitiesData } from '../data/ActivitiesData';
 
 const Activities = () => {
-  const featured = ActivitiesData[0]; // card besar
-  const others = ActivitiesData.slice(1); // card biasa
+  const featured = ActivitiesData[0];
+  const others = ActivitiesData.slice(1);
 
   return (
     <main className="px-6 md:px-20 pb-12 pt-28 font-sans">
